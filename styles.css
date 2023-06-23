@@ -61,33 +61,28 @@ p, li{
 
 .sxn-about{
     position: relative;
-    /* top: 0vh; */
-    /* border: 1px solid red; */
     text-align: justify;
     width: 100%;
     height: 100vh;
-    /* margin-left: 5vw; */
-    /* margin-top: 6vh;*/
+    display: flex;
+    flex-flow: column;
 }
 
 .sxn-about img{
     position: relative;
-    float: right;
     width: 15%;
-    top: 31%;
-    transform: translate(10vw, -50%);
     box-shadow: 7px 5px 20px #7c8688;
     border-radius: 2em;
+    align-self: end;
+    margin: 10% 10% 0% 0%;
 }
 
 .sxn-about p{
     position: relative;
-    float: left;
-    width: 45%;
-    top: 55%;
-    transform: translate(35%, -50%);
+    width: 60%;
     box-shadow: 0px 0px 20px #7c8688;
     border-radius: 1em;
+    margin: 9% 0% 0% 11%;
 }
 
 
@@ -230,6 +225,10 @@ p, li{
     grid-row: 3 / 3;
 }
 
+.cont{
+    align-self: center;
+}
+
 
 
 
@@ -260,5 +259,41 @@ p, li{
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
+
+    .nav-content{
+        margin-left: 30%;
+        float: none;
+        width: 40%;
+        justify-content: center;
+    }
+
+    .sxn-experience{
+        flex-flow: column;
+    }
     
+    .exp-work{
+        width: 95%;
+    }
+
+    .skill-cont{
+        width: 90%;
+        border-radius: 2em;
+    }
+
+    .sxn-about{
+        height: 84%;
+    }
+
+    .sxn-about img {
+        width: 60%;
+        align-self: center;
+        margin: 21% 0% 0% 0%;
+    }
+
+    .sxn-about p {
+        width: 90%;
+        margin: 33% 0% 0% 0%;
+        align-self: center;
+    }
+
 }
